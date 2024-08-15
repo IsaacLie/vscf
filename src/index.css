@@ -1,4 +1,5 @@
         @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
         body, html, #root {
             height: min-content;
@@ -93,7 +94,7 @@
             align-items: center;
             text-transform: uppercase;
             text-decoration: none;
-            font-family: "Roboto";
+            font-family: Roboto, 'Courier New';
             font-weight: 100;
             transition: all 0.3s ease-in-out;
         }
@@ -150,8 +151,8 @@
             width: 80%;
             border-radius: 5px;
             padding: 20px 30px;
-            font-family: 'Roboto', 'Courier New', Courier, monospace;
-            font-weight: 100;
+            font-family: Roboto, 'Courier New', Courier, monospace;
+            font-weight: 300;
             font-size: 20px;
             margin-bottom: 50px;
             margin-top: 250px;
@@ -193,8 +194,8 @@
         
         .leaderboard-title li {
             font-weight: 900;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 1.9rem;
+            font-family: Arial, sans-serif;
+            font-size: 1.7rem;
             text-transform: uppercase;
         }
         
@@ -207,8 +208,8 @@
         }
         
         .leaderboard-container #Players {
-            font-weight: 800;
-
+            font-weight: 700;
+            font-family: Poppins ,monospace;
         }
         
         .playerscontainer {
@@ -264,14 +265,23 @@
             background-color: white;
             margin: 0;
             padding: 10px 30px;
-
+            transition: 0.1s ease-in-out all;
         }
         
+        .tournament-wrapper ul:hover {
+            background: linear-gradient(to right, #f5ce62, #e43603);
+            background-size: 200% auto; /* Enable background position transition */
+            background-position: right center; /* Change the initial background position */
+            box-shadow: 0 4px 15px 0 rgba(198, 112, 0, 0.983);
+        }
+        
+        .tournament-wrapper ul:hover h1, .tournament-wrapper ul:hover p {
+            color: white
+        }
         .tournament-wrapper a {
             text-decoration: none;
             color: black; /* Ensure the text is readable */
         }
-        
         .disabled-link {
             color: gray;
             cursor: default;
@@ -281,3 +291,138 @@
         .disabled-link li p {
             color: gray;
         }
+        .Dynamic-wrapper h1 {
+            font-size: 45px;
+        }
+        .Dynamic-wrapper{
+            margin-top: 200px;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 20px;
+            margin-bottom: 100px;
+        }
+        .Content {
+            display: flex;
+            align-self: flex-start;
+            flex-direction: column;
+            width: max-content;
+            padding: 0 20px 20px 20px;
+            font-size: 27px;
+            border-radius: 8px;
+        }
+
+        .Content ul {
+            list-style-type: none;
+            display: flex;
+            align-items: start;
+            padding: 0;
+            gap: 7px;
+            margin: 0;;
+            flex-direction: column;
+        }
+
+        .round-style  {
+            position: absolute;
+            border-radius: 10px 10px 0 0;
+            width: 90%;
+            text-decoration: none;
+            display: flex;
+            list-style-type: none;
+            gap: 20px;
+            font-size: 35px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            margin-top: 10px;
+            padding: 0 20px;
+            align-items: center;
+            color: white;
+            background: #67B26F;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+        .round-style h2 {
+            font-size: 30px;
+        }
+
+        .round-style li {
+            color: white;
+            transition: 0.3s all ease-in-out;
+            padding: 5px 20px;
+            border-radius: 5px;
+            transition: 0.15s all ease-in-out;
+        }
+
+        .round-style li:hover {
+            border-bottom: 5px solid rgb(25, 211, 0);
+            transition: 0.15s all ease-in-out;
+            background-color: rgb(0, 237, 0);
+            box-shadow: 0 3px 10px 1px rgb(12, 236, 0);
+        }
+        
+        .round-style li:active {
+            border-bottom: 0px;
+            transition: 0.15s all ease-in-out;
+            box-shadow: none;
+        }
+
+        .round-style .active{
+            background: rgb(222, 0, 0);
+            box-shadow: 0 3px 10px 1px rgb(209, 0, 0);
+        }
+
+        .Rounds-container a {
+            text-decoration: none;
+        }
+
+        .pairings {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            padding: 20px;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90vw;
+            margin: 94px auto;
+            text-align: left;
+            color: white;
+            font-family: 'Arial', sans-serif;
+          }
+          
+          .pairings ul {
+            padding: 0;
+            margin: 0;
+          }
+          
+          .pairings li {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+          }
+          
+          .player {
+            flex: 1;
+            font-weight: bold;
+          }
+          
+          .vs {
+            flex: 0.5;
+            text-align: center;
+
+          }
+          
+          .result {
+            flex: 0.5;
+            text-align: right;
+            font-style: italic;
+          }
+          
+          .pairings li:last-child {
+            margin-bottom: 0;
+          }

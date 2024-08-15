@@ -9,7 +9,7 @@ export default function AvailableGames() {
             {tournament.map((tournaments, index) => (
                 <div className="tournament-wrapper" key={index}>
                     <ul>
-                        {tournaments.status !== "N/A"? (
+                      {tournaments.status !== "N/A"? (
                         <Link to={`/tournaments/${tournaments.link}`}>
                             <li>
                                 <h1>{tournaments.name}</h1>
